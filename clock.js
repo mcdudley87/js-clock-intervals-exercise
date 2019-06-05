@@ -1,32 +1,32 @@
 
 //Steve Solution, partial
-var sHand;
-var mHand;
-var hHand;
+// var sHand;
+// var mHand;
+// var hHand;
 
-var seconds = 0;
-var minutes = 0;
-var hours = 0;
+// var seconds = 0;
+// var minutes = 0;
+// var hours = 0;
 
-function secondRotation(seconds) {
-	return (seconds / 60) * 360
-}
+// function secondRotation(seconds) {
+// 	return (seconds / 60) * 360
+// }
 
-function minuteRotation(minutes, seconds) {
-	var wholeMinutes = (minutes / 60) *360;
-	var subMinutes = (seconds / 3600) * 360;
-	return wholeMinutes + subMinutes;
-}
+// function minuteRotation(minutes, seconds) {
+// 	var wholeMinutes = (minutes / 60) *360;
+// 	var subMinutes = (seconds / 3600) * 360;
+// 	return wholeMinutes + subMinutes;
+// }
 
-function tick() {
-	seconds++;
-	if (seconds === 60) {
-		minutes++;
-		seconds = 0;
-	}
-}
+// function tick() {
+// 	seconds++;
+// 	if (seconds === 60) {
+// 		minutes++;
+// 		seconds = 0;
+// 	}
+// }
 
-sHand.style.transform = "rotate(" + secondRotation(seconds) + "deg)";
+// sHand.style.transform = "rotate(" + secondRotation(seconds) + "deg)";
 
 
 
@@ -60,8 +60,6 @@ sHand.style.transform = "rotate(" + secondRotation(seconds) + "deg)";
 // setInterval(secondRotation, 200);
 
 
-
-/*
 var secondHand = document.querySelector('#second');
 var seconds = 0; 
 
@@ -75,7 +73,7 @@ function secondRotation() {
 };
 setInterval(secondRotation, 5);
 
-*/
+
 
 //===========================
 
